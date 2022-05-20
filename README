@@ -1,1 +1,50 @@
-test
+# Proiectarea Algoritmilor - Tema 2
+### Student: Mihailescu Eduard-Florin 322CB
+
+## Overview
+Acest proiect are scop rezolvarea temei II propusa in cadrul cursului de Proiectarea
+Algoritmilor de la Facultatea de Automatica si Calculatoare Bucuresti.
+Mentionez ca tema a obtinut un punctaj de (40/150p) pe masina locala.
+Stiu ca nu este recomandata folosirea variabilelor globale, insa in cazul rezolvarii
+acestor probleme de algoritmica, acestea usureaza un pic viata.
+
+---
+### I - Curatare
+Imediat dupa ce am vazut dimensiunile |R| si |S| am stiut ca este vorba de o
+problema de backtracking, dificultatea acestei probleme fiind data in mod
+special de partea de implementarea, aceasta fiind destul de laborioasa
+si dispusa la erori.
+Planul de "atac" al problemei este urmatorul:
+-   Incerc orice configuratie posibila de roboti si zone care necesita curatare
+-   Pentru fiecare pas din backtracking (configuratie posibila) calculez
+timpul maxim pentru ca un robot sa isi termine treaba (sa parcurga toate zone
+de curatat asignate lui)
+-   Raspunsul final va fi minimul dintre acesti timpi maximi
+
+Inafara de backtracking, a trebuit sa mai fac o preprocesare pentru matricea min_distances
+care imi spune pentru oriecare doua puncte de "interes" (robot sau zona de curatat) de pe harta
+care este distanta minima dintre ele. Acest lucru a fost realizat cu algoritmul lui Lee
+pornind din fiecare punct in parte. Complexitatea pentru acesta preprocesare este
+O(n * m * (|R|+|S|))
+
+La o configuratie posibila din backtracking (asociere intre roboti si zone), timpul minim
+al unui robot de a acoperi toate zonele este calculat in mod greedy, plecand din patratica
+robotului si alegand de fiecare data cel mai apropiat punct pentru a face deplasarea.
+Aici intra in ajutor matricea de distante preprocesata.
+
+Backtracking este facut pe biti deoarece mi se pare cea mai usoara varianta de a crea submultimi.
+Modul de functionare:
+-   Codific configuratia posibila in felul urmator -> |R| * |S| biti care imi descriu
+daca asignez o zona unui robot (1/0).
+-   Asadar, daca de exemplu am doi roboti si doua zone de curatat, primii doi biti vor
+reprezenta zonele primului robot si urmatoarele doua, zonele celuilalt robot.
+
+1001 -> O astfel de codificare ne spune ca robotul unu are asignata prima zona, si robotul doi
+are asignata a doua zona.
+1100 -> O astfel de codificare ne spune ca robotul unu are asignate ambele zone, si robotul doi
+nu are niciuna.
+
+Pentru ca o configuratie sa fie valida si calculata, trebuie ca toate zonele sa fie acoperite
+si acestea sa nu se suprapuna. (operatii pe biti ^ | &)
+
+Complexitatea backtrackingului este urmatoarea: O(2^(|R|*|S|) * |R| *|S|)
