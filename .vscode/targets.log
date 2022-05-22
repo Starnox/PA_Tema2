@@ -8,7 +8,7 @@ make: *** No rule to make target 'all'.  Stop.
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Sun May 22 15:58:37 2022
+# Make data base, printed on Sun May 22 20:35:08 2022
 
 # Variables
 
@@ -41,7 +41,7 @@ VSCODE_NLS_CONFIG = {"locale":"en","availableLanguages":{}}
 # environment
 _ = /mnt/c/Users/eduar/AppData/Local/Programs/Microsoft VS Code/bin/code
 # makefile (from 'Makefile', line 13)
-CFLAGS = -Wall -Wextra
+CFLAGS = -Wall -Wextra -g
 # makefile (from 'Makefile', line 1)
 MAKEFILE_LIST :=  Makefile
 # 'override' directive
@@ -57,7 +57,7 @@ VSCODE_CWD = /mnt/c/Users/eduar/AppData/Local/Programs/Microsoft VS Code
 # default
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
-PATH = /home/starnox/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/home/starnox/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Python27/:/mnt/c/Python27/Scripts:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/CodeBlocks/MinGW/bin:/mnt/c/Users/eduar/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/eduar/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/eduar/AppData/Local/Programs/Python/Python38-32/Scripts:/mnt/c/Users/eduar/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/eduar/AppData/Roaming/Python/Python38/Scripts:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files/Azure Data Studio/bin:/mnt/c/Program Files/MATLAB/R2021b/bin:/mnt/c/Users/eduar/.jdks/openjdk-17/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/eduar/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/eduar/.dotnet/tools:/mnt/c/Program Files/JetBrains/CLion 2020.2.4/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2021.2.2/bin:/snap/bin:/home/starnox/.fzf/bin:/home/starnox/.cabal/bin:/home/starnox/.ghcup/bin
+PATH = /home/starnox/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/wsl/lib:/mnt/c/Program Files (x86)/Razer Chroma SDK/bin:/mnt/c/Program Files/Razer Chroma SDK/bin:/mnt/c/Python27/:/mnt/c/Python27/Scripts:/mnt/c/Program Files (x86)/Razer/ChromaBroadcast/bin:/mnt/c/Program Files/Razer/ChromaBroadcast/bin:/mnt/c/Windows/system32:/mnt/c/Windows:/mnt/c/Windows/System32/Wbem:/mnt/c/Windows/System32/WindowsPowerShell/v1.0/:/mnt/c/Windows/System32/OpenSSH/:/mnt/c/Program Files/NVIDIA Corporation/NVIDIA NvDLISR:/mnt/c/Program Files (x86)/NVIDIA Corporation/PhysX/Common:/mnt/c/Program Files/CodeBlocks/MinGW/bin:/mnt/c/Users/eduar/AppData/Local/Microsoft/WindowsApps:/mnt/c/Users/eduar/AppData/Local/Programs/Microsoft VS Code/bin:/mnt/c/Users/eduar/AppData/Local/Programs/Python/Python38-32/Scripts:/mnt/c/Users/eduar/AppData/Local/Programs/Python/Python38-32/:/mnt/c/Program Files/Git/cmd:/mnt/c/Users/eduar/AppData/Roaming/Python/Python38/Scripts:/mnt/c/Program Files/PuTTY/:/mnt/c/Program Files/dotnet/:/mnt/c/Windows/system32/config/systemprofile/AppData/Local/Microsoft/WindowsApps:/mnt/c/Program Files/Microsoft SQL Server/130/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/Client SDK/ODBC/170/Tools/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/Tools/Binn/:/mnt/c/Program Files/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files (x86)/Microsoft SQL Server/150/DTS/Binn/:/mnt/c/Program Files/Azure Data Studio/bin:/mnt/c/Program Files/MATLAB/R2021b/bin:/mnt/c/Users/eduar/.jdks/openjdk-17/bin:/mnt/c/Program Files/Docker/Docker/resources/bin:/mnt/c/ProgramData/DockerDesktop/version-bin:/mnt/c/Users/eduar/AppData/Local/Programs/Python/Python38-32/Scripts/:/mnt/c/Users/eduar/.dotnet/tools:/mnt/c/Program Files/JetBrains/CLion 2020.2.4/bin:/mnt/c/Program Files/JetBrains/IntelliJ IDEA 2021.2.2/bin:/snap/bin:/home/starnox/.fzf/bin:/home/starnox/.cabal/bin:/home/starnox/.ghcup/bin
 # environment
 API_ID_TELEGRAM = 14816646
 # environment
@@ -173,9 +173,9 @@ MOTD_SHOWN = update-motd
 
 # Directories
 
-# . (device 2064, inode 120905): 21 files, no impossibilities.
+# . (device 2064, inode 120905): 28 files, no impossibilities.
 
-# 21 files, no impossibilities in 1 directories.
+# 28 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -205,7 +205,7 @@ run-p5:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-20 18:14:04.982912245
+#  Last modified 2022-05-22 20:35:05.028727486
 #  File has been updated.
 #  Successfully updated.
 
@@ -260,12 +260,12 @@ run-p1:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 33 / storage = 339 B / avg = 10 B
-# current buf: size = 8162 B / used = 339 B / count = 33 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 40 / storage = 490 B / avg = 12 B
+# current buf: size = 8162 B / used = 490 B / count = 40 / avg = 12 B
 
-# strcache performance: lookups = 44 / hit rate = 25%
+# strcache performance: lookups = 51 / hit rate = 21%
 # hash-table stats:
-# Load=33/8192=0%, Rehash=0, Collisions=1/44=2%
-# Finished Make data base on Sun May 22 15:58:37 2022
+# Load=40/8192=0%, Rehash=0, Collisions=1/51=2%
+# Finished Make data base on Sun May 22 20:35:08 2022
 
  

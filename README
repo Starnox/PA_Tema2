@@ -48,3 +48,35 @@ Pentru ca o configuratie sa fie valida si calculata, trebuie ca toate zonele sa 
 si acestea sa nu se suprapuna. (operatii pe biti ^ | &)
 
 Complexitatea backtrackingului este urmatoarea: O(2^(|R|*|S|) * |R| *|S|)
+
+---
+### II - Fortificatii
+Problema m-a dus imediat cu gandul la probleme de distanta in grafuri si de asemenea,
+vazand k-ul foarte mare mi-am dat seama ca va trebui sa aplic ceva greedy si matematic.
+Astfel, dupa mai multe exemple pe foaie, mi-am dat seama ca ma intereseaza timpii
+cei mai scurti catre asezarile barbarilor deoarece numai pe acolo ar "merge" pentru a 
+ajunge la capitala. De asemenea pot sa tratez aceste drumuri, ca un tot unitar, atunci
+cand vreau sa adaug fortifcatii (adaug 1 pentru tot drumul, nu numai pt muchia dintre oras
+normal si oras barbar). Inca o observatie importanta pe care am facut-o inainte de a rezolva
+este aceea ca daca un oras barbar poate fi acesat doar prin intermediul altui oras barbar
+atunci acel oras nu ma intereseaza si nu vreau sa calculez drumul pana la el.
+
+Astfel, solutia mea pleaca de la precalcularea tuturor rutelor de drum minim catre orase barbare
+(mai exact timpii). Acest lucru il realizez cu algoritmul lui Dijkstra (pe care l-am
+scris cu un priority queue si cu o structura NodeDist caruia ii modific operatorul "<"
+pentru a face din standardul max heap, un min heap), si de fiecare data cand intampin
+o asezare barbara (verificarea o fac cu un unordered set, deci retrieval time se face in aprox O(1)) atunci adaug la un vector timpul pana la el. Complexitatea pentru Dijkstra este de O(|E| + |V| * log |V|).
+
+Avand acum vectorul de distante (timpi), il sortez si aplic o metoda greedy de distribuire a celor k
+fortificatii. Doresc sa maresc de fiecare data timpul minim pana la capitala, asa ca incerc
+sa aduc toate drumurile la timpul maxim, incepand cu cel mai mic. De exemplu daca am drumuri cu timpi
+1 2 3 atunci procesul ar arata in felul urmator =>
+1 2 3 => 2 2 3 => 3 3 3 (asta in cazul in care k-ul este suficient de mare)
+Acum daca mai am fortificatii la indemana, trebuie sa adaug la toate cate o fortificatie pentru a mari
+timpul minim => de ex mai am 4 fortificatii atunci fac (3 + 1) (3 + 1) (3 + 1) => 4 4 4 
+Si acum chiar daca mai am o fortificatie, nu mai pot sa maresc timpul minim. Astfel rezultatul este
+dist_max + (k / nr) unde nr e numarul de drumuri.
+
+Calcularea rezultatului se face in timp liniar O(n), asadar, complexitatea totala a programului este
+data de algoritmul Dijkstra.
+

@@ -10,7 +10,7 @@
 
 LANG := cpp
 
-CFLAGS = -Wall -Wextra
+CFLAGS = -Wall -Wextra -g
 
 # nume necesar (build)
 build:

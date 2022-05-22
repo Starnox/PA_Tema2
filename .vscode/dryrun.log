@@ -1,7 +1,7 @@
-make --dry-run --always-make --keep-going --print-directory
+make --dry-run --keep-going --print-directory
 make: Entering directory '/home/starnox/An2/PA_Homework2'
-g++ -Wall -Wextra curatare.cpp -o curatare
-g++ -Wall -Wextra fortificatii.cpp -o fortificatii
-g++ -Wall -Wextra beamdrone.cpp -o beamdrone
+g++ -Wall -Wextra -g curatare.cpp -o curatare
+g++ -Wall -Wextra -g fortificatii.cpp -o fortificatii
+g++ -Wall -Wextra -g beamdrone.cpp -o beamdrone
 make: Leaving directory '/home/starnox/An2/PA_Homework2'
  
