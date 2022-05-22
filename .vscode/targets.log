@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Fri May 20 15:29:42 2022
+# Make data base, printed on Sun May 22 15:58:37 2022
 
 # Variables
 
@@ -61,7 +63,7 @@ API_ID_TELEGRAM = 14816646
 # environment
 VSCODE_LOG_STACK = false
 # environment
-VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-faf90305-6f20-46af-bf65-437657b295c8.sock
+VSCODE_IPC_HOOK_CLI = /tmp/vscode-ipc-f4246cee-d693-4f52-afc7-65971e6dd826.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -75,9 +77,9 @@ PWD = /home/starnox/An2/PA_Homework2
 # default
 .LOADED := 
 # environment
-WSL_INTEROP = /run/WSL/6083_interop
+WSL_INTEROP = /run/WSL/8_interop
 # environment
-WT_SESSION = f89bff12-166e-4428-987c-8fd175231a6f
+WT_SESSION = 801ec732-c424-4097-926a-b25a01103ac2
 # environment
 VSCODE_AMD_ENTRYPOINT = vs/workbench/api/node/extensionHostProcess
 # environment
@@ -87,7 +89,7 @@ LESSCLOSE = /usr/bin/lesspipe %s %s
 # environment
 LOGNAME = starnox
 # environment
-APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = true
+APPLICATION_INSIGHTS_NO_DIAGNOSTIC_CHANNEL = 1
 # environment
 VSCODE_HANDLES_UNCAUGHT_ERRORS = true
 # automatic
@@ -160,8 +162,10 @@ TERM = xterm-256color
 VSCODE_EXTHOST_WILL_SEND_SOCKET = true
 # environment
 WSL_DISTRO_NAME = Ubuntu
+# environment
+MOTD_SHOWN = update-motd
 # variable set hash-table stats:
-# Load=75/1024=7%, Rehash=0, Collisions=8/101=8%
+# Load=76/1024=7%, Rehash=0, Collisions=8/102=8%
 
 # Pattern-specific Variable Values
 
@@ -169,9 +173,9 @@ WSL_DISTRO_NAME = Ubuntu
 
 # Directories
 
-# . (device 2096, inode 120905): 18 files, no impossibilities.
+# . (device 2064, inode 120905): 21 files, no impossibilities.
 
-# 18 files, no impossibilities in 1 directories.
+# 21 files, no impossibilities in 1 directories.
 
 # Implicit Rules
 
@@ -201,7 +205,7 @@ run-p5:
 # Not a target:
 Makefile:
 #  Implicit rule search has been done.
-#  Last modified 2022-05-12 10:42:07.705517686
+#  Last modified 2022-05-20 18:14:04.982912245
 #  File has been updated.
 #  Successfully updated.
 
@@ -239,7 +243,7 @@ clean:
 #  Modification time never checked.
 #  File has not been updated.
 #  recipe to execute (from 'Makefile', line 36):
-	rm -f curatare
+	rm -f curatare fortificatii beamdrone
 
 run-p1:
 #  Implicit rule search has not been done.
@@ -256,14 +260,12 @@ run-p1:
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 30 / storage = 290 B / avg = 9 B
-# current buf: size = 8162 B / used = 290 B / count = 30 / avg = 9 B
+# strcache buffers: 1 (0) / strings = 33 / storage = 339 B / avg = 10 B
+# current buf: size = 8162 B / used = 339 B / count = 33 / avg = 10 B
 
-# strcache performance: lookups = 41 / hit rate = 26%
+# strcache performance: lookups = 44 / hit rate = 25%
 # hash-table stats:
-# Load=30/8192=0%, Rehash=0, Collisions=1/41=2%
-# Finished Make data base on Fri May 20 15:29:42 2022
+# Load=33/8192=0%, Rehash=0, Collisions=1/44=2%
+# Finished Make data base on Sun May 22 15:58:37 2022
 
  
-make: *** No rule to make target 'all'.  Stop.
-

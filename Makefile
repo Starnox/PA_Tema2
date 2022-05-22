@@ -33,4 +33,4 @@ run-p4:
 run-p5:
 
 clean:
-	rm -f curatare
+	rm -f curatare fortificatii beamdrone
