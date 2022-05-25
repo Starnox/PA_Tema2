@@ -22,9 +22,9 @@ void read_input() {
 
     char c;
     for (int i = 0; i < n; ++i) {
-        for(int j = 0; j < m; ++j) {
+        for (int j = 0; j < m; ++j) {
             fin >> c;
-            if(c == '.')
+            if (c == '.')
                 grid[i][j] = -1;
             else
                 grid[i][j] = -2;
@@ -37,7 +37,7 @@ void read_input() {
 }
 
 bool check_boundaries(int x, int y) {
-    if(x < 0 || y < 0 || x >= n || y >= m)
+    if (x < 0 || y < 0 || x >= n || y >= m)
         return false;
     return true;
 }
@@ -79,30 +79,21 @@ int modified_lee() {
             // go as long as you can in one direction
             int next_x = current_x + delta_x[k];
             int next_y = current_y + delta_y[k];
-
-            // mark the direction as visited
-
-            while (check_boundaries(next_x, next_y) 
+            while (check_boundaries(next_x, next_y)
                     && grid[next_x][next_y] != -2) {
-                    
                 // check if end
-                if(next_x == stopX && next_y == stopY) {
+                if (next_x == stopX && next_y == stopY)
                     return current_dist;
-                }                
-
                 // set the distance
                 if (grid[next_x][next_y] == -1) {
                     grid[next_x][next_y] = current_dist;
                     q.push({next_x, next_y, current_dist + 1, k});
-                }
-                else {
+                } else {
                     if (current_dist < grid[next_x][next_y]) {
                         grid[next_x][next_y] = current_dist;
                         q.push({next_x, next_y, current_dist + 1, k});
                     }
-                    
                 }
-                
                 // get the next element
                 next_x = next_x + delta_x[k];
                 next_y = next_y + delta_y[k];

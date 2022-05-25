@@ -6,3 +6,4 @@ beamdrone
 public_tests
 .DS_Store
 *.errors
+.vscode/
