@@ -1,0 +1,8 @@
+*.zip
+curatare
+fortificatii
+beamdrone
+*.dSYM
+public_tests
+.DS_Store
+*.errors
