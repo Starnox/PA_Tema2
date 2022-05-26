@@ -80,3 +80,19 @@ dist_max + (k / nr) unde nr e numarul de drumuri.
 Calcularea rezultatului se face in timp liniar O(n), asadar, complexitatea totala a programului este
 data de algoritmul Dijkstra.
 
+---
+### III - Beamdrone
+Enuntul si poza din exemplu m-au dus din prima cu gandul la algoritmul lui Lee insa un pic modificat.
+Modificarea consta in faptul ca la fiecare celula curenta pe care o procesez, mai intai parcurg"
+cat "pot" toti vecinii din cele 4 directii cardinale si setez drumul minim pana acolo.
+Spre deosebire de algoritmul lui Lee normal, in aceasta varianta pot aparea over-lapuri (gasim
+un drum mai bun mai tarziu un procesare). Astfel, tinand cont de acest aspect, daca pentru celula
+pe care sunt momentan am gasit un drum mai rapid, o reintroduc in coada si o procesez din nou.
+
+Insa, o precizare importanta care optimeazeaza acest algoritm si il face sa se incadreze in timpul 
+alocat este ca, pentru fiecare celula retin in structura Node directia din care aceasta
+a fost adaugata in coada pentru a nu mai procesa in mod reduntat aceea linie sau coloana.
+
+Desi in teorie, algortitmul are o complexitate worst-case de O(n*m * max(n,m)), in practica
+complexitatea este amortizata si se comporta mult mai bine.
+
