@@ -4,7 +4,6 @@
 ## Overview
 Acest proiect are scop rezolvarea temei II propusa in cadrul cursului de Proiectarea
 Algoritmilor de la Facultatea de Automatica si Calculatoare Bucuresti.
-Mentionez ca tema a obtinut un punctaj de (40/150p) pe masina locala.
 Stiu ca nu este recomandata folosirea variabilelor globale, insa in cazul rezolvarii
 acestor probleme de algoritmica, acestea usureaza un pic viata.
 
