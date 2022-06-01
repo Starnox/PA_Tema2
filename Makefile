@@ -17,6 +17,7 @@ build:
 	g++ $(CFLAGS) curatare.cpp -o curatare
 	g++ $(CFLAGS) fortificatii.cpp -o fortificatii
 	g++ $(CFLAGS) beamdrone.cpp -o beamdrone
+	g++ $(CFLAGS) curse.cpp -o curse
 
 run-p1:
 	./curatare
@@ -28,9 +29,7 @@ run-p3:
 	./beamdrone	
 
 run-p4:
-	
-
-run-p5:
+	./curse
 
 clean:
-	rm -f curatare fortificatii beamdrone
+	rm -f curatare fortificatii beamdrone curse

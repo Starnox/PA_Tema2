@@ -95,3 +95,12 @@ a fost adaugata in coada pentru a nu mai procesa in mod reduntat aceea linie sau
 Desi in teorie, algortitmul are o complexitate worst-case de O(n*m * max(n,m)), in practica
 complexitatea este amortizata si se comporta mult mai bine.
 
+---
+### IV - Curse
+Dificultatea acestei problemei a fost data, din punctul meu de vedere, de intelegerea
+enuntului. Dupa ce a acesta fost inteles, problema se rezolva doar cu o sortare 
+topologica construind graful cu putina atentie la citire. Astfel, stim din enunt ca antrenamentul i are o prioritate mai mare decat antrenamentul i + 1, asa ca tinem minte 
+cate doua linii odata si verificam pentru fiecare pista daca masinile de pe aceeasi "coloana" sunt diferite, daca sunt, atunci construim o muchie in graf de la prioritate mare la prioritate mica, altfel, trecem mai departe pana gasim doua valori diferite.
+
+Dupa ce graful a fost construit, se aplica algoritmul de sortare topologica cu DFS care
+ruleaza in O(N + M), Insa, complexitatea totala a algoritmului este data de fapt de citire care se face in O(A * N)

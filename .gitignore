@@ -7,3 +7,5 @@ public_tests
 .DS_Store
 *.errors
 .vscode/
+curse
+peda-*
